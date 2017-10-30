@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Controle_Advogado));
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
@@ -38,9 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnVisualizar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +57,9 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnVisualizar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -225,59 +226,6 @@
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
-            // btnVisualizar
-            // 
-            this.btnVisualizar.BackColor = System.Drawing.Color.DarkRed;
-            this.btnVisualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVisualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVisualizar.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
-            this.btnVisualizar.ForeColor = System.Drawing.Color.White;
-            this.btnVisualizar.Location = new System.Drawing.Point(576, 556);
-            this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(112, 39);
-            this.btnVisualizar.TabIndex = 259;
-            this.btnVisualizar.Text = "Visualizar";
-            this.btnVisualizar.UseVisualStyleBackColor = false;
-            this.btnVisualizar.Visible = false;
-            this.btnVisualizar.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.BackColor = System.Drawing.Color.DarkRed;
-            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
-            this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(458, 556);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(112, 39);
-            this.btnExcluir.TabIndex = 258;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = false;
-            this.btnExcluir.Visible = false;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.btnFechar);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnMinimizar);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnVisualizar);
-            this.panel1.Controls.Add(this.txtNome);
-            this.panel1.Controls.Add(this.btnExcluir);
-            this.panel1.Controls.Add(this.btnLimpar);
-            this.panel1.Controls.Add(this.btnVoltar);
-            this.panel1.Controls.Add(this.btnCadastrar);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1076, 610);
-            this.panel1.TabIndex = 262;
-            // 
             // Column1
             // 
             this.Column1.DataPropertyName = "adv_codigo";
@@ -422,6 +370,59 @@
             this.Column13.ReadOnly = true;
             this.Column13.Width = 90;
             // 
+            // btnVisualizar
+            // 
+            this.btnVisualizar.BackColor = System.Drawing.Color.DarkRed;
+            this.btnVisualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVisualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVisualizar.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnVisualizar.ForeColor = System.Drawing.Color.White;
+            this.btnVisualizar.Location = new System.Drawing.Point(576, 556);
+            this.btnVisualizar.Name = "btnVisualizar";
+            this.btnVisualizar.Size = new System.Drawing.Size(112, 39);
+            this.btnVisualizar.TabIndex = 259;
+            this.btnVisualizar.Text = "Visualizar";
+            this.btnVisualizar.UseVisualStyleBackColor = false;
+            this.btnVisualizar.Visible = false;
+            this.btnVisualizar.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.DarkRed;
+            this.btnExcluir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluir.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnExcluir.ForeColor = System.Drawing.Color.White;
+            this.btnExcluir.Location = new System.Drawing.Point(458, 556);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(112, 39);
+            this.btnExcluir.TabIndex = 258;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Visible = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.btnFechar);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnMinimizar);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnVisualizar);
+            this.panel1.Controls.Add(this.txtNome);
+            this.panel1.Controls.Add(this.btnExcluir);
+            this.panel1.Controls.Add(this.btnLimpar);
+            this.panel1.Controls.Add(this.btnVoltar);
+            this.panel1.Controls.Add(this.btnCadastrar);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1076, 610);
+            this.panel1.TabIndex = 262;
+            // 
             // Tela_Controle_Advogado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,6 +431,7 @@
             this.ClientSize = new System.Drawing.Size(1080, 614);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tela_Controle_Advogado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela_Controle_Advogado";

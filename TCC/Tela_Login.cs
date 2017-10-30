@@ -21,6 +21,7 @@ namespace TCC
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             //realizando autenticação com API
             var request = (HttpWebRequest)WebRequest.Create("http://localhost:8000/api/login");
             var postData = "login=" + txtUsuario.Text;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Cadastro_Secretaria_2));
             this.rdbFem = new System.Windows.Forms.RadioButton();
             this.rdbMasc = new System.Windows.Forms.RadioButton();
             this.label29 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
@@ -69,6 +69,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -369,16 +370,6 @@
             this.panel3.Size = new System.Drawing.Size(1130, 492);
             this.panel3.TabIndex = 356;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rdbFem);
-            this.groupBox1.Controls.Add(this.rdbMasc);
-            this.groupBox1.Location = new System.Drawing.Point(168, 212);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(204, 40);
-            this.groupBox1.TabIndex = 356;
-            this.groupBox1.TabStop = false;
-            // 
             // txtCep
             // 
             this.txtCep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
@@ -588,6 +579,16 @@
             this.label11.TabIndex = 358;
             this.label11.Text = "Email :";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdbFem);
+            this.groupBox1.Controls.Add(this.rdbMasc);
+            this.groupBox1.Location = new System.Drawing.Point(168, 212);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(204, 40);
+            this.groupBox1.TabIndex = 356;
+            this.groupBox1.TabStop = false;
+            // 
             // Tela_Cadastro_Secretaria_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -596,6 +597,7 @@
             this.ClientSize = new System.Drawing.Size(1134, 496);
             this.Controls.Add(this.panel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tela_Cadastro_Secretaria_2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Tela_Cadastro_Secretaria_2_Load);

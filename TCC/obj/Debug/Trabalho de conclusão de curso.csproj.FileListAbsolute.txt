@@ -29,9 +29,6 @@ C:\Users\Gustavo\Desktop\Trabalho de Conclusão de Curso\TCC\TCC\obj\Debug\TCC.T
 C:\Users\Gustavo\Desktop\Trabalho de Conclusão de Curso\TCC\TCC\obj\Debug\TCC.Tela_Controle_Usuario.resources
 C:\Users\Gustavo\Desktop\Trabalho de Conclusão de Curso\TCC\TCC\obj\Debug\TCC.Tela_Cadastro_Caso_3.resources
 C:\Users\Gustavo\Desktop\Trabalho de Conclusão de Curso\TCC\TCC\obj\Debug\TCC.Tela_Cadastro_Caso_4.resources
-C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\TCC.exe.config
-C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\TCC.exe
-C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\TCC.pdb
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\Trabalho de conclusão de curso.csprojResolveAssemblyReference.cache
@@ -60,8 +57,11 @@ C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Menu.resourc
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Splash.resources
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\Trabalho de conclusão de curso.csproj.GenerateResource.Cache
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\Trabalho de conclusão de curso.csproj.CoreCompileInputs.cache
-C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.exe
-C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.pdb
 C:\Users\Gustavo\Downloads\PROJETO C#\PROJETO C#\TCC\bin\Debug\TCC.exe.config
 C:\Users\Gustavo\Downloads\PROJETO C#\PROJETO C#\TCC\obj\Debug\TCC.exe
 C:\Users\Gustavo\Downloads\PROJETO C#\PROJETO C#\TCC\obj\Debug\TCC.pdb
+C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.exe.config
+C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.exe
+C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.pdb
+C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.exe
+C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.pdb

@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Controle_Cliente));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            this.btnVisualizar = new System.Windows.Forms.Button();
-            this.btnFechar = new System.Windows.Forms.Button();
-            this.btnMinimizar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +49,14 @@
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnVisualizar = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
+            this.btnMinimizar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -140,6 +141,130 @@
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "cli_cod";
+            this.Column12.HeaderText = "Cod.";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            this.Column12.Width = 50;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "cli_nome";
+            this.Column1.FillWeight = 150F;
+            this.Column1.HeaderText = "Nome";
+            this.Column1.MinimumWidth = 150;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "cli_sexo";
+            this.Column2.HeaderText = "Sexo";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Visible = false;
+            this.Column2.Width = 80;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "cli_email";
+            this.Column3.HeaderText = "Email";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 200;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "cli_rg";
+            this.Column4.HeaderText = "RG";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 80;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "cli_cpf";
+            this.Column5.HeaderText = "CPF";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Width = 90;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "cli_data_nascimento";
+            this.Column6.HeaderText = "Data de Nasc.";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Visible = false;
+            this.Column6.Width = 80;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "cli_cidade";
+            this.Column7.HeaderText = "Cidade";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "cli_endereco";
+            this.Column8.HeaderText = "Endereço";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 150;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "cli_numero";
+            this.Column9.FillWeight = 20F;
+            this.Column9.HeaderText = "Num.";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 45;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "cli_telefone";
+            this.Column10.HeaderText = "Telefone";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Width = 80;
+            // 
+            // Column11
+            // 
+            this.Column11.DataPropertyName = "cli_celular";
+            this.Column11.HeaderText = "Celular";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            this.Column11.Width = 90;
+            // 
+            // Column16
+            // 
+            this.Column16.DataPropertyName = "cli_bairro";
+            this.Column16.HeaderText = "Bairro";
+            this.Column16.Name = "Column16";
+            this.Column16.ReadOnly = true;
+            this.Column16.Visible = false;
+            // 
+            // Column14
+            // 
+            this.Column14.DataPropertyName = "cli_cep";
+            this.Column14.HeaderText = "CEP";
+            this.Column14.Name = "Column14";
+            this.Column14.ReadOnly = true;
+            this.Column14.Visible = false;
+            // 
+            // Column15
+            // 
+            this.Column15.DataPropertyName = "cli_estado";
+            this.Column15.HeaderText = "Estado";
+            this.Column15.Name = "Column15";
+            this.Column15.ReadOnly = true;
+            this.Column15.Visible = false;
             // 
             // btnExcluir
             // 
@@ -271,130 +396,6 @@
             this.panel1.TabIndex = 238;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "cli_cod";
-            this.Column12.HeaderText = "Cod.";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            this.Column12.Width = 50;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "cli_nome";
-            this.Column1.FillWeight = 150F;
-            this.Column1.HeaderText = "Nome";
-            this.Column1.MinimumWidth = 150;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "cli_sexo";
-            this.Column2.HeaderText = "Sexo";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Visible = false;
-            this.Column2.Width = 80;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "cli_email";
-            this.Column3.HeaderText = "Email";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 200;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "cli_rg";
-            this.Column4.HeaderText = "RG";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 80;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "cli_cpf";
-            this.Column5.HeaderText = "CPF";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 90;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "cli_data_nascimento";
-            this.Column6.HeaderText = "Data de Nasc.";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Visible = false;
-            this.Column6.Width = 80;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "cli_cidade";
-            this.Column7.HeaderText = "Cidade";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "cli_endereco";
-            this.Column8.HeaderText = "Endereço";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 150;
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "cli_numero";
-            this.Column9.FillWeight = 20F;
-            this.Column9.HeaderText = "Num.";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 45;
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "cli_telefone";
-            this.Column10.HeaderText = "Telefone";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 80;
-            // 
-            // Column11
-            // 
-            this.Column11.DataPropertyName = "cli_celular";
-            this.Column11.HeaderText = "Celular";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Width = 90;
-            // 
-            // Column16
-            // 
-            this.Column16.DataPropertyName = "cli_bairro";
-            this.Column16.HeaderText = "Bairro";
-            this.Column16.Name = "Column16";
-            this.Column16.ReadOnly = true;
-            this.Column16.Visible = false;
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "cli_cep";
-            this.Column14.HeaderText = "CEP";
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
-            this.Column14.Visible = false;
-            // 
-            // Column15
-            // 
-            this.Column15.DataPropertyName = "cli_estado";
-            this.Column15.HeaderText = "Estado";
-            this.Column15.Name = "Column15";
-            this.Column15.ReadOnly = true;
-            this.Column15.Visible = false;
-            // 
             // Tela_Controle_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -403,6 +404,7 @@
             this.ClientSize = new System.Drawing.Size(1104, 638);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tela_Controle_Cliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela_Cliente";

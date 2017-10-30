@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Configuration;
-using System.Data;
 
 namespace TCC
 {
@@ -18,7 +17,6 @@ namespace TCC
     {
         private MySqlConnection minhaConexao;
         private MySqlCommand meuComando;
-        private MySqlDataAdapter objAdapter;
 
         public string codigo = "",nome="",rg="",cpf="",sexo="",email="",
             endereco="",numero ="", telefone="",celular="",especialidade="",
@@ -60,7 +58,7 @@ namespace TCC
         public Tela_Controle_Advogado()
         {
             InitializeComponent();
-            minhaConexao = new MySqlConnection("Persist Security Info = false; server = localhost; database = bd_tcc;uid = root ; pwd = Felipe");
+            minhaConexao = new MySqlConnection("Persist Security Info = false; server = localhost; database = adv_sys;uid = root ; pwd =");
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)

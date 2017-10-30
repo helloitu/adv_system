@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Cadastro_Advogado));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -76,6 +77,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
@@ -88,9 +92,6 @@
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -725,13 +726,46 @@
             this.panel5.Size = new System.Drawing.Size(1130, 736);
             this.panel5.TabIndex = 235;
             // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.label25.ForeColor = System.Drawing.Color.DarkRed;
+            this.label25.Location = new System.Drawing.Point(304, 154);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(15, 17);
+            this.label25.TabIndex = 260;
+            this.label25.Text = "*";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.label24.ForeColor = System.Drawing.Color.DarkRed;
+            this.label24.Location = new System.Drawing.Point(303, 126);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(15, 17);
+            this.label24.TabIndex = 259;
+            this.label24.Text = "*";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.label16.ForeColor = System.Drawing.Color.DarkRed;
+            this.label16.Location = new System.Drawing.Point(440, 98);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(15, 17);
+            this.label16.TabIndex = 258;
+            this.label16.Text = "*";
+            // 
             // txtCep
             // 
             this.txtCep.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.txtCep.Location = new System.Drawing.Point(175, 287);
             this.txtCep.Mask = "##\\.###\\-###";
             this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(102, 23);
+            this.txtCep.Size = new System.Drawing.Size(81, 23);
             this.txtCep.TabIndex = 257;
             // 
             // label5
@@ -872,39 +906,6 @@
             this.txtNumero.Size = new System.Drawing.Size(41, 23);
             this.txtNumero.TabIndex = 247;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.label16.ForeColor = System.Drawing.Color.DarkRed;
-            this.label16.Location = new System.Drawing.Point(440, 98);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(15, 17);
-            this.label16.TabIndex = 258;
-            this.label16.Text = "*";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.label24.ForeColor = System.Drawing.Color.DarkRed;
-            this.label24.Location = new System.Drawing.Point(303, 126);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(15, 17);
-            this.label24.TabIndex = 259;
-            this.label24.Text = "*";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.label25.ForeColor = System.Drawing.Color.DarkRed;
-            this.label25.Location = new System.Drawing.Point(304, 154);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(15, 17);
-            this.label25.TabIndex = 260;
-            this.label25.Text = "*";
-            // 
             // Tela_Cadastro_Advogado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -913,6 +914,7 @@
             this.ClientSize = new System.Drawing.Size(1134, 740);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tela_Cadastro_Advogado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela_Cadastro_Advogado";
@@ -977,7 +979,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.RadioButton rdbAtivo;
         private System.Windows.Forms.RadioButton rdbInativo;
-        private System.Windows.Forms.TextBox txtSexo;
         private System.Windows.Forms.MaskedTextBox txtData;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label26;
