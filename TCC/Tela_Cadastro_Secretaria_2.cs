@@ -69,7 +69,10 @@ namespace TCC
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            secretaria secretaria = new secretaria(txtNome.Text, txtRG.Text, txtCPF.Text, sexo,  txtEndereco.Text, txtNumero.Text, txtTelefone.Text, txtCelular.Text);
+            secretaria secretaria = new secretaria(txtNome.Text, txtRG.Text, txtCPF.Text, sexo,
+                txtEndereco.Text, txtCep.Text, txtCidade.Text, cmbEstado.Text, txtBairro.Text,
+                txtNumero.Text, txtTelefone.Text, txtCelular.Text
+                );
             secretariaBD secretariaBD = new secretariaBD();
             secretariaBD.alterarSecretaria(secretaria, int.Parse(codigo));
             MessageBox.Show("Cadastro do secretário : " + txtNome.Text + " alterado com sucesso");

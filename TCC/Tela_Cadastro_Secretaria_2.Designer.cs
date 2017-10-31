@@ -41,9 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtRG = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -70,6 +68,8 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtRG = new System.Windows.Forms.MaskedTextBox();
+            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -123,7 +123,7 @@
             this.button8.BackColor = System.Drawing.Color.White;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Arial Unicode MS", 10F);
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button8.ForeColor = System.Drawing.Color.DarkRed;
             this.button8.Location = new System.Drawing.Point(1089, 2);
             this.button8.Name = "button8";
@@ -139,7 +139,7 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Unicode MS", 10F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.ForeColor = System.Drawing.Color.DarkRed;
             this.button1.Location = new System.Drawing.Point(1055, 2);
             this.button1.Name = "button1";
@@ -153,7 +153,7 @@
             this.btnVoltar.BackColor = System.Drawing.Color.DarkRed;
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
             this.btnVoltar.Location = new System.Drawing.Point(583, 439);
             this.btnVoltar.Name = "btnVoltar";
@@ -168,7 +168,7 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.DarkRed;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
             this.btnCadastrar.Location = new System.Drawing.Point(462, 439);
             this.btnCadastrar.Name = "btnCadastrar";
@@ -231,15 +231,6 @@
             this.label14.TabIndex = 326;
             this.label14.Text = "*";
             // 
-            // txtCPF
-            // 
-            this.txtCPF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
-            this.txtCPF.Location = new System.Drawing.Point(168, 183);
-            this.txtCPF.Mask = "###.###.###-##";
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(125, 23);
-            this.txtCPF.TabIndex = 323;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -251,15 +242,6 @@
             this.label10.Size = new System.Drawing.Size(47, 17);
             this.label10.TabIndex = 325;
             this.label10.Text = "CPF :";
-            // 
-            // txtRG
-            // 
-            this.txtRG.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
-            this.txtRG.Location = new System.Drawing.Point(168, 156);
-            this.txtRG.Mask = "##.###.###-#";
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(125, 23);
-            this.txtRG.TabIndex = 322;
             // 
             // label9
             // 
@@ -329,6 +311,8 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.txtRG);
+            this.panel3.Controls.Add(this.txtCPF);
             this.panel3.Controls.Add(this.txtCep);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.cmbEstado);
@@ -356,11 +340,9 @@
             this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.txtRG);
             this.panel3.Controls.Add(this.btnVoltar);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.btnCadastrar);
-            this.panel3.Controls.Add(this.txtCPF);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label15);
             this.panel3.Controls.Add(this.label21);
@@ -589,6 +571,24 @@
             this.groupBox1.TabIndex = 356;
             this.groupBox1.TabStop = false;
             // 
+            // txtRG
+            // 
+            this.txtRG.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.txtRG.Location = new System.Drawing.Point(168, 156);
+            this.txtRG.Mask = "00\\.000\\.000\\-0";
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(125, 23);
+            this.txtRG.TabIndex = 375;
+            // 
+            // txtCPF
+            // 
+            this.txtCPF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
+            this.txtCPF.Location = new System.Drawing.Point(168, 185);
+            this.txtCPF.Mask = "000\\.000\\.000\\-00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(125, 23);
+            this.txtCPF.TabIndex = 376;
+            // 
             // Tela_Cadastro_Secretaria_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -631,8 +631,6 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.RadioButton rdbFem;
         public System.Windows.Forms.RadioButton rdbMasc;
-        public System.Windows.Forms.MaskedTextBox txtCPF;
-        public System.Windows.Forms.MaskedTextBox txtRG;
         public System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -655,5 +653,7 @@
         public System.Windows.Forms.MaskedTextBox txtCelular;
         public System.Windows.Forms.MaskedTextBox txtTelefone;
         public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.MaskedTextBox txtRG;
+        public System.Windows.Forms.MaskedTextBox txtCPF;
     }
 }

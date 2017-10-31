@@ -96,7 +96,7 @@
             this.btnFechar.BackColor = System.Drawing.Color.White;
             this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Font = new System.Drawing.Font("Arial Unicode MS", 10F);
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnFechar.ForeColor = System.Drawing.Color.DarkRed;
             this.btnFechar.Location = new System.Drawing.Point(1089, 3);
             this.btnFechar.Name = "btnFechar";
@@ -112,7 +112,7 @@
             this.btnMinimizar2.BackColor = System.Drawing.Color.White;
             this.btnMinimizar2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizar2.Font = new System.Drawing.Font("Arial Unicode MS", 10F);
+            this.btnMinimizar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnMinimizar2.ForeColor = System.Drawing.Color.DarkRed;
             this.btnMinimizar2.Location = new System.Drawing.Point(1055, 3);
             this.btnMinimizar2.Name = "btnMinimizar2";
@@ -139,7 +139,7 @@
             this.btnVoltar.BackColor = System.Drawing.Color.DarkRed;
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
             this.btnVoltar.Location = new System.Drawing.Point(535, 585);
             this.btnVoltar.Name = "btnVoltar";
@@ -154,7 +154,7 @@
             this.btnConcluido.BackColor = System.Drawing.Color.DarkRed;
             this.btnConcluido.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConcluido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConcluido.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnConcluido.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnConcluido.ForeColor = System.Drawing.Color.White;
             this.btnConcluido.Location = new System.Drawing.Point(417, 585);
             this.btnConcluido.Name = "btnConcluido";
@@ -428,7 +428,7 @@
             // 
             this.txtCPF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.txtCPF.Location = new System.Drawing.Point(176, 151);
-            this.txtCPF.Mask = "###.###.###-##";
+            this.txtCPF.Mask = "000\\.000\\.000\\-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(125, 23);
             this.txtCPF.TabIndex = 308;
@@ -449,7 +449,7 @@
             // 
             this.txtRG.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.txtRG.Location = new System.Drawing.Point(176, 124);
-            this.txtRG.Mask = "##.###.###-#";
+            this.txtRG.Mask = "00\\.000\\.000\\-0";
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(125, 23);
             this.txtRG.TabIndex = 307;

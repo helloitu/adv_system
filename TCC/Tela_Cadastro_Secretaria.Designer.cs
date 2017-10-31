@@ -42,10 +42,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -59,7 +57,6 @@
             this.rdbMasc = new System.Windows.Forms.RadioButton();
             this.label29 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCep = new System.Windows.Forms.MaskedTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
@@ -76,6 +73,10 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -172,7 +173,7 @@
             // 
             this.txtCPF.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.txtCPF.Location = new System.Drawing.Point(168, 183);
-            this.txtCPF.Mask = "###.###.###-##";
+            this.txtCPF.Mask = "000\\.000\\.000\\-00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(125, 23);
             this.txtCPF.TabIndex = 166;
@@ -193,7 +194,7 @@
             // 
             this.txtRG.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F);
             this.txtRG.Location = new System.Drawing.Point(168, 156);
-            this.txtRG.Mask = "##.###.###-#";
+            this.txtRG.Mask = "00\\.000\\.000\\-0";
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(125, 23);
             this.txtRG.TabIndex = 165;
@@ -230,17 +231,6 @@
             this.label2.TabIndex = 164;
             this.label2.Text = "Nome :";
             // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
-            this.label28.ForeColor = System.Drawing.Color.DarkRed;
-            this.label28.Location = new System.Drawing.Point(333, 490);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(15, 17);
-            this.label28.TabIndex = 191;
-            this.label28.Text = "*";
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -263,15 +253,6 @@
             this.label20.Size = new System.Drawing.Size(63, 17);
             this.label20.TabIndex = 188;
             this.label20.Text = "Senha :";
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(168, 490);
-            this.txtSenha.MaxLength = 30;
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(159, 26);
-            this.txtSenha.TabIndex = 187;
             // 
             // txtLogin
             // 
@@ -318,7 +299,7 @@
             this.btnVoltar.BackColor = System.Drawing.Color.DarkRed;
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
             this.btnVoltar.Location = new System.Drawing.Point(663, 543);
             this.btnVoltar.Name = "btnVoltar";
@@ -333,7 +314,7 @@
             this.btnLimpar.BackColor = System.Drawing.Color.DarkRed;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpar.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnLimpar.ForeColor = System.Drawing.Color.White;
             this.btnLimpar.Location = new System.Drawing.Point(545, 543);
             this.btnLimpar.Name = "btnLimpar";
@@ -348,7 +329,7 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.DarkRed;
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Font = new System.Drawing.Font("Arial Unicode MS", 14F);
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
             this.btnCadastrar.Location = new System.Drawing.Point(422, 543);
             this.btnCadastrar.Name = "btnCadastrar";
@@ -363,7 +344,7 @@
             this.button8.BackColor = System.Drawing.Color.White;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Arial Unicode MS", 10F);
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button8.ForeColor = System.Drawing.Color.DarkRed;
             this.button8.Location = new System.Drawing.Point(1090, 2);
             this.button8.Name = "button8";
@@ -379,7 +360,7 @@
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Unicode MS", 10F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.ForeColor = System.Drawing.Color.DarkRed;
             this.button1.Location = new System.Drawing.Point(1056, 2);
             this.button1.Name = "button1";
@@ -435,6 +416,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.txtCep);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.cmbEstado);
@@ -481,16 +463,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1130, 605);
             this.panel3.TabIndex = 318;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rdbMasc);
-            this.groupBox1.Controls.Add(this.rdbFem);
-            this.groupBox1.Location = new System.Drawing.Point(168, 212);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(207, 40);
-            this.groupBox1.TabIndex = 318;
-            this.groupBox1.TabStop = false;
             // 
             // txtCep
             // 
@@ -681,6 +653,53 @@
             this.label11.TabIndex = 323;
             this.label11.Text = "Telefone :";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rdbMasc);
+            this.groupBox1.Controls.Add(this.rdbFem);
+            this.groupBox1.Location = new System.Drawing.Point(168, 212);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(207, 40);
+            this.groupBox1.TabIndex = 318;
+            this.groupBox1.TabStop = false;
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.BackColor = System.Drawing.Color.DarkRed;
+            this.txtSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.ForeColor = System.Drawing.Color.DarkRed;
+            this.txtSenha.Location = new System.Drawing.Point(168, 490);
+            this.txtSenha.MaxLength = 30;
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(159, 26);
+            this.txtSenha.TabIndex = 187;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F);
+            this.label28.ForeColor = System.Drawing.Color.DarkRed;
+            this.label28.Location = new System.Drawing.Point(333, 490);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(15, 17);
+            this.label28.TabIndex = 191;
+            this.label28.Text = "*";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button2.ForeColor = System.Drawing.Color.DarkRed;
+            this.button2.Location = new System.Drawing.Point(354, 490);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(132, 28);
+            this.button2.TabIndex = 337;
+            this.button2.Text = "Visualizar senha";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // Tela_Cadastro_Secretaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -723,10 +742,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel4;
@@ -757,5 +774,8 @@
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtSenha;
     }
 }

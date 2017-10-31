@@ -171,8 +171,9 @@ namespace TCC
 
         private void btnConcluido_Click(object sender, EventArgs e)
         {
-            advogado advogado = new advogado(txtNome.Text, txtRG.Text,txtCPF.Text,sexo,txtEmail.Text,
-                txtEndereco.Text,txtNumero.Text,txtTelefone.Text,txtCelular.Text,txtEspecialidade.Text,txtOAB.Text,txtData.Text,status);
+            advogado advogado = new advogado(txtNome.Text, txtRG.Text, txtCPF.Text, sexo, txtEmail.Text, txtEndereco.Text,
+                   txtBairro.Text, cmbEstado.Text, txtCep.Text, txtCidade.Text,
+                   txtNumero.Text, txtTelefone.Text, txtCelular.Text, txtEspecialidade.Text, txtOAB.Text, txtData.Text, status);
             advogadoBD advogadoBD = new advogadoBD();
             advogadoBD.alterarAdvogado(advogado, int.Parse(codigo));
             MessageBox.Show("Cadastro do advogado : " + txtNome.Text + " alterado com sucesso");

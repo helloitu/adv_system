@@ -48,8 +48,13 @@ namespace TCC
         public void IncluirAdvogado(advogado advogado)
         {
             MySqlCommand Com = mCon.CreateCommand();
-            Com.CommandText = "INSERT INTO tbl_advogado(adv_nome,adv_rg,adv_cpf,adv_sexo,adv_email,adv_endereco,adv_numero,adv_telefone,adv_celular,adv_especialidade, " +
-                "adv_registro,adv_data_emissao,adv_status) values(?nome,?rg,?cpf,?sexo,?email,?endereco,?numero,?telefone,?celular,?especialidade, " +
+            Com.CommandText = "INSERT INTO tbl_advogado(adv_nome,adv_rg,adv_cpf,"+
+                "adv_sexo,adv_email,adv_endereco,adv_bairro,adv_estado,"+
+                "adv_cep,adv_cidade,adv_numero,adv_telefone,adv_celular,"+
+                "adv_especialidade, " +
+                "adv_registro,adv_data_emissao,adv_status) values(?nome,?rg,?cpf,"+
+                "?sexo,?email,?endereco,?bairro,?estado,?cep,?cidade,?numero,"+
+                "?telefone,?celular,?especialidade, " +
                 "?registro,?data_emissao,?status)";
             Com.Parameters.AddWithValue("?nome", advogado.Nome);
             Com.Parameters.AddWithValue("?rg", advogado.Rg);
@@ -57,6 +62,10 @@ namespace TCC
             Com.Parameters.AddWithValue("?sexo", advogado.Sexo);
             Com.Parameters.AddWithValue("?email", advogado.Email);
             Com.Parameters.AddWithValue("?endereco", advogado.Endereco);
+            Com.Parameters.AddWithValue("?bairro", advogado.Bairro);
+            Com.Parameters.AddWithValue("?estado", advogado.Estado);
+            Com.Parameters.AddWithValue("?cep", advogado.CEP);
+            Com.Parameters.AddWithValue("?cidade", advogado.Cidade);
             Com.Parameters.AddWithValue("?numero", advogado.Numero);
             Com.Parameters.AddWithValue("?telefone", advogado.Telefone);
             Com.Parameters.AddWithValue("?celular", advogado.Celular);
@@ -157,14 +166,19 @@ namespace TCC
 
             */
 
-       
 
 
-    public void alterarAdvogado(advogado advogado, int id)
+
+        public void alterarAdvogado(advogado advogado, int id)
         {
             MySqlCommand Com = mCon.CreateCommand();
-            Com.CommandText = "UPDATE tbl_advogado SET adv_nome=?nome, adv_rg=?rg, adv_cpf=?cpf,adv_sexo=?sexo,adv_email=?email,adv_endereco = ?endereco,adv_numero = ?numero," +
-                "adv_telefone = ?telefone , adv_celular = ?celular,adv_especialidade = ?especialidade,adv_registro = ?registro,adv_data_emissao = ?data_emissao,adv_status = ?status"+
+            Com.CommandText = "UPDATE tbl_advogado SET adv_nome=?nome, adv_rg=?rg," +
+                " adv_cpf=?cpf,adv_sexo=?sexo,adv_email=?email,adv_endereco = ?endereco," +
+                "adv_bairro =?bairro,adv_estado=?estado,adv_cep=?cep," +
+                "adv_cidade=?cidade, adv_numero = ?numero," +
+                "adv_telefone = ?telefone , adv_celular = ?celular," +
+                "adv_especialidade = ?especialidade,adv_registro = ?registro," +
+                "adv_data_emissao = ?data_emissao,adv_status = ?status" +
                 " WHERE adv_codigo=?codigo";
             Com.Parameters.AddWithValue("?nome", advogado.Nome);
             Com.Parameters.AddWithValue("?rg", advogado.Rg);
@@ -172,6 +186,10 @@ namespace TCC
             Com.Parameters.AddWithValue("?sexo", advogado.Sexo);
             Com.Parameters.AddWithValue("?email", advogado.Email);
             Com.Parameters.AddWithValue("?endereco", advogado.Endereco);
+            Com.Parameters.AddWithValue("?bairro", advogado.Bairro);
+            Com.Parameters.AddWithValue("?estado", advogado.Estado);
+            Com.Parameters.AddWithValue("?cep", advogado.CEP);
+            Com.Parameters.AddWithValue("?cidade", advogado.Cidade);
             Com.Parameters.AddWithValue("?numero", advogado.Numero);
             Com.Parameters.AddWithValue("?telefone", advogado.Telefone);
             Com.Parameters.AddWithValue("?celular", advogado.Celular);

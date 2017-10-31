@@ -23,7 +23,7 @@ namespace TCC
         {
 
             //realizando autenticação com API
-            var request = (HttpWebRequest)WebRequest.Create("http://localhost:8000/api/login");
+            var request = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/api/login");
             var postData = "login=" + txtUsuario.Text;
             postData += "&senha=" + txtSenha.Text;
             var data = Encoding.ASCII.GetBytes(postData);

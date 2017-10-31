@@ -57,9 +57,11 @@ namespace TCC
         private void btnConcluido_Click(object sender, EventArgs e)
         {
             valor = txtValor.Text;
-            caso caso = new caso(txtNaurezaCausa.Text, txtVara.Text, txtCartorio.Text, txtNumeroPasta.Text,txtNumeroProcesso.Text,tipo,
+            caso caso = new caso(txtNaurezaCausa.Text, txtVara.Text, txtCartorio.Text,
+                txtNumeroPasta.Text, tipo, txtNumeroProcesso.Text,
                 valor, pagamento, txtNomeCliente.Text, txtPosicao.Text, txtNomeAdvogado.Text, txtNomeParteContraria.Text,
-                txtEnderecoParteContraria.Text, txtNumeroParteContraria.Text, txtTelefoneParteContraria.Text, txtCelularParteContraria.Text,
+                txtEnderecoParteContraria.Text, txtNumeroParteContraria.Text, txtTelefoneParteContraria.Text,
+                txtCelularParteContraria.Text,
                 txtData.Text, txtAndamento.Text, txtDataAndamento.Text);
             casoBD advogadoBD = new casoBD();
             advogadoBD.alterarCaso(caso, int.Parse(codigo));

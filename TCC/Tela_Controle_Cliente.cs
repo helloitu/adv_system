@@ -84,13 +84,13 @@ namespace TCC
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Informações do cliente " + codigo +
-                "\n Nome : " + nome +" |  Sexo : " + sexo
-                +"\n Email : "+ email
-                +"\n RG : " + rg + "  |  CPF : "+ cpf
-                +"\n Data de Nascimento : "+ datanasc
-                +"\n Endereço : " + endereco + "  |  CEP : " + cep + "  |  Numero : " + num
-                +"\n Bairro : " + bairro + "  |  Cidade : " + cidade + "  |  Estado : " + estado
-                +"\n Telefone : " +telefone + "  |  Celular : " + celular
+                "\n Nome : " + nome + " |  Sexo : " + sexo
+                + "\n Email : " + email
+                + "\n RG : " + rg + "  |  CPF : " + cpf
+                + "\n Data de Nascimento : " + datanasc
+                + "\n Endereço : " + endereco + "  |  CEP : " + cep + "  |  Numero : " + num
+                + "\n Bairro : " + bairro + "  |  Cidade : " + cidade + "  |  Estado : " + estado
+                + "\n Telefone : " + telefone + "  |  Celular : " + celular
                 );
             btnVisualizar.Visible = false;
             btnExcluir.Visible = false;
@@ -136,8 +136,8 @@ namespace TCC
             cliente.txtNumero.Text = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
             cliente.txtTelefone.Text = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
             cliente.txtCelular.Text = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            cliente.txtBairro.Text = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
-            cliente.txtCep.Text = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
+            cliente.txtBairro.Text = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
+            cliente.txtCep.Text = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
             cliente.cmbEstado.Text = this.dataGridView1.CurrentRow.Cells[14].Value.ToString();
             cliente.Show();
             this.Close();
@@ -177,8 +177,8 @@ namespace TCC
             num = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
             telefone = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
             celular = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            bairro = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
-            cep = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
+            bairro = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
+            cep = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
             estado = this.dataGridView1.CurrentRow.Cells[14].Value.ToString();
             btnVisualizar.Visible = true;
             btnExcluir.Visible = true;

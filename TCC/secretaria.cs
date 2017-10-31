@@ -11,7 +11,7 @@ namespace TCC
         public secretaria()
         {
         }
-        public secretaria(string nome,string rg,string cpf, string sexo,string endereco,
+        public secretaria(string nome,string rg,string cpf, string sexo,string endereco,string cep,string cidade,string estado,string bairro,
             string numero,string telefone, string celular)
         {
             this.Nome = nome;
@@ -19,6 +19,10 @@ namespace TCC
             this.Cpf = cpf;
             this.Sexo = sexo;
             this.Endereco = endereco;
+            this.CEP = cep;
+            this.Cidade = cidade;
+            this.Estado = estado;
+            this.Bairro = bairro;
             this.Numero = numero;
             this.Telefone = telefone;
             this.Celular = celular;
@@ -71,6 +75,33 @@ namespace TCC
             get { return endereco; }
             set {endereco = value; }
         }
+
+        private string cidade;
+        public string Cidade
+        {
+            get { return cidade; }
+            set { cidade = value; }
+        }
+        private string bairro;
+        public string Bairro
+        {
+            get { return bairro; }
+            set { bairro = value; }
+        }
+        private string estado;
+        public string Estado
+        {
+            get { return estado; }
+            set { estado = value; }
+        }
+
+        private string cep;
+        public string CEP
+        {
+            get { return cep; }
+            set { cep = value; }
+        }
+
 
         ///
         private string numero;

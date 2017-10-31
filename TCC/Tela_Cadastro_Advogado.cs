@@ -98,7 +98,7 @@ namespace TCC
             try
             {
                 //inicia checkin de login
-                var request3 = (HttpWebRequest)WebRequest.Create("http://localhost:8000/api/consulta/login");
+                var request3 = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/api/consulta/login");
                 var postCheckinUsu = "usu_login=" + txtLogin.Text;
                 var data3 = Encoding.ASCII.GetBytes(postCheckinUsu);
                 request3.Method = "POST";
@@ -115,7 +115,7 @@ namespace TCC
                 if (statusCheckinLogin == true)
                 {
                     //inicia cadastro de login na tabela usuario
-                    var request2 = (HttpWebRequest)WebRequest.Create("http://localhost:8000/api/registro/usuario");
+                    var request2 = (HttpWebRequest)WebRequest.Create("http://192.168.0.115:8000/api/registro/usuario");
                     var postDataUsu = "usu_nome=" + txtNome.Text;
                     postDataUsu += "&usu_funcao=Advogado";
                     postDataUsu += "&usu_login=" + txtLogin.Text;
@@ -131,7 +131,7 @@ namespace TCC
                     var response2 = (HttpWebResponse)request2.GetResponse();
                     var responseString2 = new System.IO.StreamReader(response2.GetResponseStream()).ReadToEnd();
                     //inicia cadastro do advogado em si
-                    var request = (HttpWebRequest)WebRequest.Create("http://localhost:8000/api/registro/adv");
+                    var request = (HttpWebRequest)WebRequest.Create("http://192.168.0.115:8000/api/registro/adv");
                     var postData = "adv_nome=" + txtNome.Text;
                     postData += "&adv_rg=" + txtRG.Text;
                     postData += "&adv_cpf=" + txtCPF.Text;
@@ -475,6 +475,11 @@ namespace TCC
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            txtSenha.BackColor = Color.White;
         }
     }
 }

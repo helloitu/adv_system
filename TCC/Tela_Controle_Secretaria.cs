@@ -21,6 +21,12 @@ namespace TCC
             secretariaBD secretariaBD = new secretariaBD();
             dataGridView1.DataSource = secretariaBD.getSecretaria();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         public Tela_Controle_Secretaria()
         {
             InitializeComponent();
@@ -46,7 +52,7 @@ namespace TCC
                 "\n Nome : " + nome + "  |  Sexo : " + sexo
                 + "\n RG : " + rg + "  |  CPF : " + cpf
                 + "\n Endereço : " + endereco + "  |  Numero : " + num + "  |  Bairro : " + bairro
-                +"\n Cidade : " + cidade + "  | Estado : " + estado
+                + "\n Cidade : " + cidade + "  | Estado : " + estado
                 + "\n Telefone : " + telefone + "  |  Celular : " + celular
                 );
             btnVisualizar.Visible = false;
@@ -66,7 +72,23 @@ namespace TCC
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
+            Tela_Cadastro_Secretaria_2 tela_cadastro_2 = new Tela_Cadastro_Secretaria_2();
+            tela_cadastro_2.codigo = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            tela_cadastro_2.txtNome.Text = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            tela_cadastro_2.txtRG.Text = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            tela_cadastro_2.txtCPF.Text = this.dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            tela_cadastro_2.sexo = this.dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            tela_cadastro_2.txtEndereco.Text = this.dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            tela_cadastro_2.txtNumero.Text = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            tela_cadastro_2.txtTelefone.Text = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            tela_cadastro_2.txtCelular.Text = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
+            tela_cadastro_2.txtBairro.Text = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            tela_cadastro_2.txtCidade.Text = this.dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            tela_cadastro_2.txtCep.Text = this.dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            estado = this.dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            tela_cadastro_2.Show();
+            this.Close();
         }
 
         private void Tela_Controle_Secretaria_Load(object sender, EventArgs e)
@@ -83,13 +105,13 @@ namespace TCC
             cpf = this.dataGridView1.CurrentRow.Cells[3].Value.ToString();
             sexo = this.dataGridView1.CurrentRow.Cells[4].Value.ToString();
             endereco = this.dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            num = this.dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            telefone = this.dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            celular = this.dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            num = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            telefone = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            celular = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
             bairro = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
-            cidade = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
-            cep = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            estado = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
+            cidade = this.dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            cep = this.dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            estado = this.dataGridView1.CurrentRow.Cells[8].Value.ToString();
             btnExcluir.Visible = true;
             btnVisualizar.Visible = true;
 
@@ -111,22 +133,6 @@ namespace TCC
 
         private void dataGridView1_DoubleClick(object sender, EventArgs e)
         {
-            Tela_Cadastro_Secretaria_2 tela_cadastro_2 = new Tela_Cadastro_Secretaria_2();
-            tela_cadastro_2.codigo = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            tela_cadastro_2.txtNome.Text = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            tela_cadastro_2.txtRG.Text = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            tela_cadastro_2.txtCPF.Text = this.dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            tela_cadastro_2.sexo = this.dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            tela_cadastro_2.txtEndereco.Text = this.dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            tela_cadastro_2.txtNumero.Text = this.dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            tela_cadastro_2.txtTelefone.Text = this.dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            tela_cadastro_2.txtCelular.Text = this.dataGridView1.CurrentRow.Cells[8].Value.ToString();
-            tela_cadastro_2.txtBairro.Text = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
-            tela_cadastro_2.txtCidade.Text = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
-            tela_cadastro_2.txtCep.Text = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            tela_cadastro_2.cmbEstado.Text = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
-            tela_cadastro_2.Show();
-            this.Close();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

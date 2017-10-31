@@ -26,7 +26,7 @@ namespace TCC
 
                     try
                     {
-                        var requisicao = (HttpWebRequest)WebRequest.Create("http://localhost:8000/api/hellou");
+                        var requisicao = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/api/hellou");
 
                         var resposta = (HttpWebResponse)requisicao.GetResponse();
 
@@ -59,6 +59,11 @@ namespace TCC
         }
 
         private void progressBar2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

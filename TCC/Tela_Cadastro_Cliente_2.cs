@@ -40,8 +40,9 @@ namespace TCC
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            cliente cliente = new cliente(txtNome.Text, txtSexo.Text, txtEmail.Text, txtRG.Text, 
-                txtCPF.Text,txtDataNascimento.Text,txtCidade.Text,txtEndereco.Text, 
+            cliente cliente = new cliente(txtNome.Text, txtSexo.Text, txtEmail.Text, txtRG.Text,
+                txtCPF.Text, txtDataNascimento.Text, txtCidade.Text, txtCep.Text, txtBairro.Text,
+                cmbEstado.Text, txtEndereco.Text,
                 txtNumero.Text, txtTelefone.Text, txtCelular.Text);
             clienteBD clienteBD = new clienteBD();
             clienteBD.alterarCliente(cliente, int.Parse(txtCodigo.Text));

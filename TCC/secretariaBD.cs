@@ -81,7 +81,8 @@ namespace TCC
             MySqlCommand Com = mCon.CreateCommand();
             Com.CommandText = "UPDATE tbl_secretaria SET sec_nome=?nome, sec_rg = ?rg," +
                 "sec_cpf = ?cpf, sec_sexo = ?sexo," +
-                "sec_endereco = ?endereco, sec_numero = ?numero , " +
+                "sec_endereco = ?endereco,sec_cep=?cep,sec_cidade=?cidade," +
+                " sec_estado = ?estado,sec_bairro=?bairro,sec_numero = ?numero , " +
                 "sec_telefone = ?telefone , sec_celular = ?celular" +
                 " WHERE sec_codigo=?codigo";
             Com.Parameters.AddWithValue("?nome", secretaria.Nome);
@@ -89,6 +90,10 @@ namespace TCC
             Com.Parameters.AddWithValue("?cpf", secretaria.Cpf);
             Com.Parameters.AddWithValue("?sexo", secretaria.Sexo);
             Com.Parameters.AddWithValue("?endereco", secretaria.Endereco);
+            Com.Parameters.AddWithValue("?cep", secretaria.CEP);
+            Com.Parameters.AddWithValue("?cidade", secretaria.Cidade);
+            Com.Parameters.AddWithValue("?estado", secretaria.Estado);
+            Com.Parameters.AddWithValue("?bairro", secretaria.Bairro);
             Com.Parameters.AddWithValue("?numero", secretaria.Numero);
             Com.Parameters.AddWithValue("?telefone", secretaria.Telefone);
             Com.Parameters.AddWithValue("?celular", secretaria.Celular);

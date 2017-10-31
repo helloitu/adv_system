@@ -157,10 +157,12 @@ namespace TCC
             tela_cadastro_2.txtCidade.Text = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
             tela_cadastro_2.txtCep.Text = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
             tela_cadastro_2.cmbEstado.Text = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            tela_cadastro_2.txtEspecialidade.Text = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
-            tela_cadastro_2.txtOAB.Text = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
-            tela_cadastro_2.txtData.Text = this.dataGridView1.CurrentRow.Cells[14].Value.ToString();
-            tela_cadastro_2.status = this.dataGridView1.CurrentRow.Cells[15].Value.ToString();
+            tela_cadastro_2.txtTelefone.Text = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
+            tela_cadastro_2.txtCelular.Text = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
+            tela_cadastro_2.txtEspecialidade.Text = this.dataGridView1.CurrentRow.Cells[14].Value.ToString();
+            tela_cadastro_2.txtOAB.Text = this.dataGridView1.CurrentRow.Cells[15].Value.ToString();
+            tela_cadastro_2.txtData.Text = this.dataGridView1.CurrentRow.Cells[16].Value.ToString();
+            tela_cadastro_2.status = this.dataGridView1.CurrentRow.Cells[17].Value.ToString();
             tela_cadastro_2.ShowDialog();
             this.Close();
         }
@@ -201,7 +203,7 @@ namespace TCC
             cep = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
             estado = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
             telefone = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
-            celular = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
+            celular = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
             especialidade = this.dataGridView1.CurrentRow.Cells[14].Value.ToString();
             registro = this.dataGridView1.CurrentRow.Cells[15].Value.ToString();
             dataadimissao = this.dataGridView1.CurrentRow.Cells[16].Value.ToString();

@@ -65,3 +65,42 @@ C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.exe
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.pdb
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.exe
 C:\Users\Guilherme\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.pdb
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.exe.config
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.exe
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.pdb
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\Trabalho de conclusão de curso.csprojResolveAssemblyReference.cache
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Properties.Resources.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Advogado_2.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Caso_2.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Agenda.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Advogado.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Caso.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Caso_3.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Caso_4.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Cliente.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Cliente_2.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Secretaria.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Secretaria_2.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Cadastro_Usuario_2.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Controle_Advogado.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Controle_Caso.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Controle_Cliente.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Controle_Secretaria.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Controle_Usuario.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Escolhe_Advogado.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Escolhe_Cliente.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Login.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Menu.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\TCC.Tela_Splash.resources
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\Trabalho de conclusão de curso.csproj.GenerateResource.Cache
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\Trabalho de conclusão de curso.csproj.CoreCompileInputs.cache
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.exe
+C:\Users\italo duque\Desktop\tccAdv\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.pdb
+G:\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.exe.config
+G:\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.exe
+G:\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.pdb
+C:\Users\Gustavo\Desktop\PROJETO C#\TCC\bin\Debug\ADV_SYSTEM.exe.config
+C:\Users\Gustavo\Desktop\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.exe
+C:\Users\Gustavo\Desktop\PROJETO C#\TCC\obj\Debug\ADV_SYSTEM.pdb

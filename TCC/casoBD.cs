@@ -143,14 +143,17 @@ namespace TCC
                 mCon.Close();
             }
         }
-
         public void alterarCaso(caso caso, int codigo)
         {
             MySqlCommand Com = mCon.CreateCommand();
-            Com.CommandText = "UPDATE tbl_caso SET caso_causa = ?causa,caso_vara = ?vara,caso_cartorio = ?cartorio,caso_pasta = ?pasta,caso_numero = ?numero,caso_tipo = ?tipo," +
-                "caso_valor = ?valor,caso_pagamento = ?pagamento ,caso_cliente = ?cliente,caso_posicao = ?posicao,caso_advogado = ?advogado,"+
-                "caso_parte_nome = ?parte_nome,caso_parte_endereco = ?parte_endereco,caso_parte_numero = ?parte_numero,caso_parte_telefone = ?parte_telefone,"+
-                "caso_parte_celular = ?parte_celular,caso_data = ?data,caso_andamento = ?andamento,caso_data_andamento = ?data_andamento" +
+            Com.CommandText = "UPDATE tbl_caso SET caso_causa = ?causa,caso_vara = ?vara," +
+                "caso_cartorio = ?cartorio,caso_pasta = ?pasta,caso_numero = ?numero,caso_tipo = ?tipo," +
+                "caso_valor = ?valor,caso_pagamento = ?pagamento ,caso_cliente = ?cliente," +
+                "caso_posicao = ?posicao,caso_advogado = ?advogado," +
+                "caso_parte_nome = ?parte_nome,caso_parte_endereco = ?parte_endereco," +
+                "caso_parte_numero = ?parte_numero,caso_parte_telefone = ?parte_telefone," +
+                "caso_parte_celular = ?parte_celular,caso_data = ?data,caso_andamento = ?andamento," +
+                "caso_data_andamento = ?data_andamento" +
                 " WHERE caso_codigo=?codigo";
             Com.Parameters.AddWithValue("?causa", caso.Causa);
             Com.Parameters.AddWithValue("?vara", caso.Vara);

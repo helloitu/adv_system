@@ -76,55 +76,15 @@ namespace TCC
                 mCon.Close();
             }
         }
-
-        public cliente selecionaCliente(string nome)
-        {
-            try
-            {
-                mCon.Open();
-                MySqlCommand cmd = mCon.CreateCommand();
-                cmd.CommandText = "SELECT * from tbl_cliente WHERE cli_nome = ?nome";
-                cmd.Parameters.AddWithValue("?nome", nome);
-
-                MySqlDataReader dr;
-
-                cliente cliSelect = new cliente();
-                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
-
-                while (dr.Read())
-                {
-                    cliSelect.ClienteCOD = Convert.ToInt32(dr["cli_cod"].ToString());
-                    cliSelect.Nome = dr["cli_nome"].ToString();
-                    cliSelect.Sexo = dr["cli_sexo"].ToString();
-                    cliSelect.Email = dr["cli_email"].ToString();
-                    cliSelect.Rg = dr["cli_rg"].ToString();
-                    cliSelect.Cpf = dr["cli_cpf"].ToString();
-                    cliSelect.Datanascimento = dr["cli_data_nascimento"].ToString();
-                    cliSelect.Endereco = dr["cli_cidade"].ToString();
-                    cliSelect.Endereco = dr["cli_endereco"].ToString();
-                    cliSelect.Numero = dr["cli_numero"].ToString();
-                    cliSelect.Telefone = dr["cli_telefone"].ToString();
-                    cliSelect.Celular = dr["cli_celular"].ToString();
-                }
-                return cliSelect;
-            }
-            catch(Exception ex)
-            {
-                throw new ApplicationException(ex.ToString());
-            }
-            finally
-            {
-                mCon.Close();
-            }
-        }
-
-
+        /*
         public void alterarCliente(cliente cliente, int id)
         {
             MySqlCommand Com = mCon.CreateCommand();
-            Com.CommandText = "UPDATE tbl_cliente SET cli_nome=?nome, cli_sexo = ?sexo, cli_email = ?email, cli_rg = ?rg,"+
+            Com.CommandText = "UPDATE tbl_cliente SET cli_nome=?nome, cli_sexo = ?sexo," +
+                " cli_email = ?email, cli_rg = ?rg," +
                 "cli_cpf = ?cpf, cli_data_nascimento = ?data_nascimento," +
-                "cli_cidade = ?cidade, cli_endereco = ?endereco, cli_numero = ?numero , "+
+                "cli_cidade = ?cidade, cli_cep=?cep,cli_bairro=?bairro," +
+                "cli_estado=?estado,cli_endereco = ?endereco, cli_numero = ?numero , " +
                 "cli_telefone = ?telefone , cli_celular = ?celular" +
                 " WHERE cli_cod=?cod";
             Com.Parameters.AddWithValue("?nome", cliente.Nome);
@@ -134,6 +94,9 @@ namespace TCC
             Com.Parameters.AddWithValue("?cpf", cliente.Cpf);
             Com.Parameters.AddWithValue("?data_nascimento", cliente.Datanascimento);
             Com.Parameters.AddWithValue("?cidade", cliente.Cidade);
+            Com.Parameters.AddWithValue("?cep", cliente.CEP);
+            Com.Parameters.AddWithValue("?bairro", cliente.Bairro);
+            Com.Parameters.AddWithValue("?estado", cliente.Estado);
             Com.Parameters.AddWithValue("?endereco", cliente.Endereco);
             Com.Parameters.AddWithValue("?numero", cliente.Numero);
             Com.Parameters.AddWithValue("?telefone", cliente.Telefone);
@@ -153,6 +116,48 @@ namespace TCC
                 mCon.Close();
             }
         }
+    
+     */
+        public void alterarCliente(cliente cliente, int id)
+        {
+            MySqlCommand Com = mCon.CreateCommand();
+            Com.CommandText = "UPDATE tbl_cliente SET cli_nome=?nome, cli_sexo = ?sexo,"+
+                " cli_email = ?email, cli_rg = ?rg,"+
+                "cli_cpf = ?cpf, cli_data_nascimento = ?data_nascimento," +
+                "cli_cidade = ?cidade, cli_cep=?cep,adv_bairro=?bairro"+
+                "cli_estado=?estado,cli_endereco = ?endereco, cli_numero = ?numero , " +
+                "cli_telefone = ?telefone , cli_celular = ?celular" +
+                " WHERE cli_cod=?cod";
+            Com.Parameters.AddWithValue("?nome", cliente.Nome);
+            Com.Parameters.AddWithValue("?sexo", cliente.Sexo);
+            Com.Parameters.AddWithValue("?email", cliente.Email);
+            Com.Parameters.AddWithValue("?rg", cliente.Rg);
+            Com.Parameters.AddWithValue("?cpf", cliente.Cpf);
+            Com.Parameters.AddWithValue("?data_nascimento", cliente.Datanascimento);
+            Com.Parameters.AddWithValue("?cidade", cliente.Cidade);
+            Com.Parameters.AddWithValue("?cep", cliente.CEP);
+            Com.Parameters.AddWithValue("?bairro", cliente.Bairro);
+            Com.Parameters.AddWithValue("?estado", cliente.Estado);
+            Com.Parameters.AddWithValue("?endereco", cliente.Endereco);
+            Com.Parameters.AddWithValue("?numero", cliente.Numero);
+            Com.Parameters.AddWithValue("?telefone", cliente.Telefone);
+            Com.Parameters.AddWithValue("?celular", cliente.Celular);
+            Com.Parameters.AddWithValue("?cod", id);
+            try
+            {
+                mCon.Open();
+                int registroAfetados = Com.ExecuteNonQuery();
+            }
+            catch (MySqlException ex)
+            {
+                throw new ApplicationException(ex.ToString());
+            }
+            finally
+            {
+                mCon.Close();
+            }
+        }
+        
 
         public void excluirCliente(int id)
         {

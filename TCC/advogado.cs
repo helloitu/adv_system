@@ -10,10 +10,15 @@ namespace TCC
     {
         public advogado() {
         }
-        public advogado(string nome, string rg, string cpf,string sexo , string email,string endereco,string numero , string telefone,
+        public advogado(string nome, string rg, string cpf,string sexo , string email,string endereco,string bairro,
+            string estado,string cep,string cidade,string numero , string telefone,
             string celular,string especialidade,string registro, string data_emissao,string status)
         {
             this.Nome = nome;
+            this.Bairro = bairro;
+            this.Cidade = cidade;
+            this.Estado = estado;
+            this.CEP = cep;
             this.Rg = rg;
             this.Cpf = cpf;
             this.Sexo = sexo;
@@ -44,8 +49,36 @@ namespace TCC
                     set { nome = value;}
                 }
 
-                ///
-                private string rg;
+                private string cep;
+                public string CEP
+                {
+                    get { return cep; }
+                    set { cep = value; }
+                }
+
+                private string estado;
+                public string Estado
+                {
+                    get { return estado; }
+                    set { estado = value; }
+                }
+
+
+                private string cidade;
+                public string Cidade
+                {
+                    get { return cidade; }
+                    set { cidade = value; }
+                }
+
+                private string bairro;
+                public string Bairro
+                {
+                    get { return bairro; }
+                    set { bairro = value; }
+                }
+        ///
+        private string rg;
                 public string Rg
                 {
                     get{ return rg;}

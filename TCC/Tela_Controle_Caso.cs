@@ -16,6 +16,11 @@ namespace TCC
             nome = "", posicao = "", advogado = "", partenome = "", parteendereco = "", partenumero = "", partetelefone = "",
             partecelular = "", data = "", andamento = "", dataandamento = "",numero="";
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void btnVisualizar_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" Informações do processo " + numero
@@ -29,15 +34,15 @@ namespace TCC
                 + "\n Tipo de atendimento : " + tipo
                 + "\n Valor : R$" + valor
                 + "\n Tipo de pagamento : " + pagamento
-                + "\n Parte contrária" 
+                + "\n Parte contrária"
                 + "\n Nome : " + partenome
                 + "\n Endereço : " + parteendereco + "  |  Numero : " + partenumero
                 + "\n Telefone : " + partetelefone + "  |  Celular : " + partecelular
                 + "\n Caso "
                 + "\n Data : " + data
-                + "\n Andamento : " + andamento + "  |   Data do andamento : " + dataandamento) ;
+                + "\n Andamento : " + andamento + "  |   Data do andamento : " + dataandamento);
             btnVisualizar.Visible = false;
-                }
+        }
 
         public Tela_Controle_Caso()
         {
@@ -114,20 +119,21 @@ namespace TCC
             vara = this.dataGridView1.CurrentRow.Cells[5].Value.ToString();
             cartorio = this.dataGridView1.CurrentRow.Cells[6].Value.ToString();
             pasta = this.dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            tipo = this.dataGridView1.CurrentRow.Cells[8].Value.ToString();
-            numero = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            numero = this.dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            tipo = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
             valor = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
             pagamento = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
             partenome = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
             parteendereco = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
             partenumero = this.dataGridView1.CurrentRow.Cells[14].Value.ToString();
-            partetelefone= this.dataGridView1.CurrentRow.Cells[15].Value.ToString();
+            partetelefone = this.dataGridView1.CurrentRow.Cells[15].Value.ToString();
             partecelular = this.dataGridView1.CurrentRow.Cells[16].Value.ToString();
             data = this.dataGridView1.CurrentRow.Cells[17].Value.ToString();
             andamento = this.dataGridView1.CurrentRow.Cells[18].Value.ToString();
             dataandamento = this.dataGridView1.CurrentRow.Cells[19].Value.ToString();
             btnExcluir.Visible = true;
-            btnVisualizar.Visible = true;txtNome.Text = nome;
+            btnVisualizar.Visible = true;
+            txtNome.Text = nome;
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -141,18 +147,18 @@ namespace TCC
             caso.txtVara.Text = this.dataGridView1.CurrentRow.Cells[5].Value.ToString();
             caso.txtCartorio.Text = this.dataGridView1.CurrentRow.Cells[6].Value.ToString();
             caso.txtNumeroPasta.Text = this.dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            caso.tipo = this.dataGridView1.CurrentRow.Cells[8].Value.ToString();
-            caso.txtNumeroProcesso.Text = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
-            caso.valor = this.dataGridView1.CurrentRow.Cells[10].Value.ToString(); 
-            caso.pagamento= this.dataGridView1.CurrentRow.Cells[11].Value.ToString(); 
-            caso.txtNomeParteContraria.Text = this.dataGridView1.CurrentRow.Cells[12].Value.ToString(); 
-            caso.txtEnderecoParteContraria.Text = this.dataGridView1.CurrentRow.Cells[13].Value.ToString(); 
-            caso.txtNumeroParteContraria.Text = this.dataGridView1.CurrentRow.Cells[14].Value.ToString(); 
-            caso.txtTelefoneParteContraria.Text = this.dataGridView1.CurrentRow.Cells[15].Value.ToString(); 
-            caso.txtCelularParteContraria.Text = this.dataGridView1.CurrentRow.Cells[16].Value.ToString(); 
-            caso.txtData.Text = this.dataGridView1.CurrentRow.Cells[17].Value.ToString(); 
-            caso.txtAndamento.Text = this.dataGridView1.CurrentRow.Cells[18].Value.ToString(); 
-            caso.txtDataAndamento.Text = this.dataGridView1.CurrentRow.Cells[19].Value.ToString(); 
+            caso.tipo = this.dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            caso.txtNumeroProcesso.Text = this.dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            caso.valor = this.dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            caso.pagamento = this.dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            caso.txtNomeParteContraria.Text = this.dataGridView1.CurrentRow.Cells[12].Value.ToString();
+            caso.txtEnderecoParteContraria.Text = this.dataGridView1.CurrentRow.Cells[13].Value.ToString();
+            caso.txtNumeroParteContraria.Text = this.dataGridView1.CurrentRow.Cells[14].Value.ToString();
+            caso.txtTelefoneParteContraria.Text = this.dataGridView1.CurrentRow.Cells[15].Value.ToString();
+            caso.txtCelularParteContraria.Text = this.dataGridView1.CurrentRow.Cells[16].Value.ToString();
+            caso.txtData.Text = this.dataGridView1.CurrentRow.Cells[17].Value.ToString();
+            caso.txtAndamento.Text = this.dataGridView1.CurrentRow.Cells[18].Value.ToString();
+            caso.txtDataAndamento.Text = this.dataGridView1.CurrentRow.Cells[19].Value.ToString();
             caso.Show();
             this.Close();
         }

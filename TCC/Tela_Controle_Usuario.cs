@@ -68,6 +68,11 @@ namespace TCC
             btnExcluir.Visible = false;
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             codigo = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();

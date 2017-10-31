@@ -12,7 +12,8 @@ namespace TCC
         {
         }
         public cliente(string nome, string sexo, string email, string rg,
-            string cpf, string datanascimento,string cidade, string endereco, string numero,
+            string cpf, string datanascimento,string cidade, 
+            string bairro,string cep,string estado,string endereco, string numero,
             string telefone,string celular)
         {
             this.Nome = nome;
@@ -22,6 +23,9 @@ namespace TCC
             this.Cpf = cpf;
             this.Datanascimento = datanascimento;
             this.Cidade = cidade;
+            this.Bairro = bairro;
+            this.Estado = estado;
+            this.CEP = cep;
             this.Endereco = endereco;
             this.Numero = numero;
             this.Telefone = telefone;
@@ -33,6 +37,27 @@ namespace TCC
         {
             get { return _clienteCOD; }
             set { _clienteCOD = value; }
+        }
+
+        private string cep;
+        public string CEP
+        {
+            get { return cep; }
+            set { cep = value; }
+        }
+
+        private string estado;
+        public string Estado
+        {
+            get { return estado; }
+            set { estado = value; }
+        }
+
+        private string bairro;
+        public string Bairro
+        {
+            get { return bairro; }
+            set { bairro = value; }
         }
 
         private string nome;
